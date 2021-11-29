@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <form action="/process" method="post" class="bg-dark text-primary p-5 rounded col-6 mx-auto">
+        <h1>Dojo Survey</h1>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <select name="city"  class="form-control">
+                <option value="Austin">Austin</option>
+                <option value="Denver">Denver</option>
+                <option selected value="Online">Online</option>
+                <option value="San Diego">San Diego</option>
+                <option value="Seattle">Seattle</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="language">Favorite Technology:</label>
+            <select name="language"  class="form-control">
+                <option value="CSS">CSS</option>
+                <option value="Go Lang">Go Lang</option>
+                <option value="HTML">HTML</option>
+                <option value="Java">Java</option>
+                <option selected value="JavaScript">JavaScript</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="Python">Python</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h6>Preferred stack:</h6>
+            <input type="checkbox" id="front-end" name="stack" value="Front End">
+            <label for="front-end">Front End</label>
+            <input type="checkbox" id="back-end" name="stack" value="Back End">
+            <label for="back-end">Back End</label>
+        </div>        
+        <div class="form-group">
+            <h6>Expected Wages:</h6>
+            <input type="radio" id="below_minimum" name="wage" value="Below minimum wage">
+            <label for="below_minimum">Below minimum wage</label> 
+            <input type="radio" id="minimum_wage" name="wage" value="Minimum wage">
+            <label for="minimum_wage">Minimum wage</label>
+            <input type="radio" id="netbah" name="wage" value="Not enough to buy a house">
+            <label for="netbah">Not enough to buy a house</label>
+            <input type="radio" id="cbahnac" name="wage" value="I can buy a house but not a car">
+            <label for="cbahnac">I can buy a house but not a car</label>
+            <input type="radio" id="cbahacnp" name="wage" value="I can buy a house and a car but cannot afford pets">
+            <label for="cbahacnp">I can buy a house and a car but cannot afford pets</label>            
+        </div>
+        <div class="form-group">
+            <label for="name">Comments:</label>
+            <textarea name="comments"  cols="30" rows="10" class="form-control"></textarea>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+</body>
+</html>
